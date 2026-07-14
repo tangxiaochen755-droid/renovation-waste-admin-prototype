@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="装修垃圾便民服务后台管理系统静态演示原型">
+  <title>装修垃圾便民服务｜后台管理</title>
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+  <div class="prototype-banner">
+    <span class="pulse-dot"></span>
+    客户核对版原型
+    <span>装修垃圾便民服务后台 · 演示数据</span>
+  </div>
+  <aside class="sidebar" aria-label="主导航">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M6 8.5 12 5l6 3.5v7L12 19l-6-3.5v-7Z"/><path d="M9 11.5h6M12 8v7"/></svg>
+      </div>
+      <div><strong>清运智管</strong><small>装修垃圾便民服务</small></div>
+    </div>
+    <nav id="main-nav"></nav>
+    <div class="sidebar-foot">
+      <div class="system-health"><span></span><div><b>系统运行正常</b><small>最后同步 10:42</small></div></div>
+      <button class="ghost-button compact" data-action="show-help">原型使用说明</button>
+    </div>
+  </aside>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="topbar-title"><button class="icon-button mobile-menu" data-action="toggle-sidebar" aria-label="打开菜单"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><div><small id="breadcrumb">工作台 / 业务概览</small><h1 id="page-title">业务工作台</h1></div></div>
+      <div class="topbar-actions">
+        <button class="icon-button notification" data-action="show-notifications" aria-label="通知"><svg viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 7h18s-3 0-3-7M10 20h4"/></svg><i>4</i></button>
+        <label class="role-switcher">演示角色<select id="role-select" aria-label="切换演示角色"><option value="system">系统管理员</option><option value="business" selected>业务管理员</option><option value="reviewer">审核人员</option></select></label>
+        <button class="profile" data-action="profile"><span id="avatar">林</span><div><b id="profile-name">林清禾</b><small id="profile-role">业务管理员</small></div><svg viewBox="0 0 24 24"><path d="m8 10 4 4 4-4"/></svg></button>
+      </div>
+    </header>
+    <section id="page-content" class="page-content" aria-live="polite"></section>
+  </main>
+  <div id="drawer-mask" class="overlay" hidden><aside id="drawer" class="drawer" role="dialog" aria-modal="true"></aside></div>
+  <div id="modal-mask" class="overlay modal-layer" hidden><section id="modal" class="modal" role="dialog" aria-modal="true"></section></div>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  <script src="scripts/mock-data.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
