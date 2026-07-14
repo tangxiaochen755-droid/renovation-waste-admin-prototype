@@ -1,0 +1,23 @@
+{
+  "meta": { "name": "装修垃圾便民服务后台", "version": "0.1.0" },
+  "color": {
+    "brand": "#176B4D",
+    "brandDark": "#0E4C38",
+    "brandSoft": "#E8F3EE",
+    "canvas": "#F3F5F2",
+    "surface": "#FFFFFF",
+    "text": "#17211D",
+    "textSecondary": "#65716C",
+    "line": "#DDE4DF",
+    "success": "#247A57",
+    "warning": "#B8751A",
+    "danger": "#B4483F",
+    "info": "#3D6D8C"
+  },
+  "radius": { "small": 6, "medium": 10, "large": 16, "panel": 20 },
+  "space": { "xs": 4, "sm": 8, "md": 12, "lg": 16, "xl": 24, "xxl": 32 },
+  "shadow": {
+    "panel": "0 18px 48px rgba(36,72,57,0.07), 0 2px 8px rgba(36,72,57,0.04)",
+    "floating": "0 24px 60px rgba(23,43,35,0.16)"
+  }
+}
